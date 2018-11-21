@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.citybrain.agenthub.mapper.GridInfoMapper">
+
+<insert id="insert" parameterType="com.citybrain.agenthub.model.GridInfo">
+    insert into chengshidanao_core.grid_info_test (zone_id, zone_name, zone_lng,
+      zone_lat, cnt_user)
+    values (#{zoneId,jdbcType=VARCHAR}, #{zoneName,jdbcType=VARCHAR}, #{zoneLng,jdbcType=VARCHAR},
+      #{zoneLat,jdbcType=VARCHAR}, #{cntUser,jdbcType=VARCHAR})
+  </insert>
+</mapper>
